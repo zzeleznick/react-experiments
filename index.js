@@ -20,6 +20,7 @@ render((
         <Route path="/repos" component={Repos}/>
          <Route path="/repos/:userName/:repoName" component={Repo}/>
         <Route path="/zz" component={Zach}/>
+        <Route path="*" component={Home}/>
     </Route>
   </Router>
 ), document.getElementById('app'))
