@@ -24,6 +24,8 @@ class SpecialCard extends React.Component {
           'btn-pressed': this.state.isPressed,
           'animate': !this.state.isPressed && this.state.isHovered
         });
+        var title = this.props.contents.title;
+        var body = this.props.contents.body;
         // forked via http://codepen.io/virgilpana/pen/RNYQwB
         return (
         <div id="canvas-3D">
@@ -37,12 +39,10 @@ class SpecialCard extends React.Component {
                     <div id="view_details">View details</div>
                     <div className="stats">
                         <div className="stats-container">
-                            <span className="product_name">Adidas Originals</span>
-                            <p>React.PropTypes includes types that can be used with a component's propTypes object to validate props being passed to your components. For more information about propTypes, see Reusable Components.</p>
+                            <span className="product_name">{title}</span>
+                            <p>{body}</p>
                             <div className="product-options">
                                 <strong>SIZES</strong>
-                                <span>XS, S, M, L, XL, XXL</span>
-                                <strong>COLORS</strong>
                             </div>
                         </div>
                     </div>

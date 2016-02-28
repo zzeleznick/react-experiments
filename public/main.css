@@ -27,5 +27,9 @@ body {
 }
 
 .card-group{
-    display: flex;
+    /*display: flex;*/
+}
+
+.card-container{
+    padding: 10px 0 10px;
 }
