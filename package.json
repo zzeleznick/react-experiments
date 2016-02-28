@@ -6,15 +6,20 @@
   "scripts": {
     "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
     "start:dev": "webpack-dev-server --inline --content-base public --history-api-fallback",
-    "start:prod": "webpack && node server.js"
+    "start:prod": "webpack && node server.js",
+    "build:client": "webpack",
+    "build:server": "webpack --config webpack.server.config.js",
+    "build": "npm run build:client && npm run build:server"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "classnames": "^2.2.3",
     "compression": "^1.6.1",
     "if-env": "^1.0.0",
     "react": "^0.14.7",
     "react-dom": "^0.14.7",
+    "react-hover-mixin": "^1.1.1",
     "react-router": "^2.0.0"
   },
   "devDependencies": {

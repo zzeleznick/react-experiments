@@ -15,7 +15,6 @@ export default React.createClass({
         </ul>
 
         {this.props.children || <Home/>}
-
       </div>
     )
   }

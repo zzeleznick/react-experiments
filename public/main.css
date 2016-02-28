@@ -9,3 +9,23 @@
 a:hover{
     color: blue;
 }
+
+body {
+    background: #eaebec;
+    font-family: "Raleway", "Open Sans", sans-serif;
+}
+
+.btn {
+    background-color: yellow;
+    height: 60px;
+    width: 100px;
+}
+
+.btn-over{
+    background-color: red;
+    font-size: 50px !important;
+}
+
+.card-group{
+    display: flex;
+}
